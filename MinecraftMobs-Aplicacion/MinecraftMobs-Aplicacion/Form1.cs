@@ -1,4 +1,4 @@
-namespace mobsMinecraft_Aplicacion
+namespace MinecraftMobs_Aplicacion
 {
     public partial class frmMain : Form
     {
