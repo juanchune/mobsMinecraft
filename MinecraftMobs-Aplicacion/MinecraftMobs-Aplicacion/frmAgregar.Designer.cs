@@ -1,6 +1,6 @@
 ﻿namespace MinecraftMobs_Aplicacion
 {
-    partial class Agregar
+    partial class frmAgregar
     {
         /// <summary>
         /// Required designer variable.
@@ -57,6 +57,8 @@
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
+            textBox4 = new TextBox();
+            button1 = new Button();
             grbTipo.SuspendLayout();
             grbPasivo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -85,6 +87,7 @@
             btnAgregar.TabIndex = 2;
             btnAgregar.Text = "Agregar";
             btnAgregar.UseVisualStyleBackColor = true;
+            btnAgregar.Click += btnAgregar_Click;
             // 
             // grbTipo
             // 
@@ -155,6 +158,7 @@
             pictureBox1.Location = new Point(17, 459);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(288, 254);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 9;
             pictureBox1.TabStop = false;
             // 
@@ -250,12 +254,14 @@
             grbHostil.Size = new Size(551, 746);
             grbHostil.TabIndex = 10;
             grbHostil.TabStop = false;
+            grbHostil.Visible = false;
             // 
             // pictureBox2
             // 
             pictureBox2.Location = new Point(17, 459);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(288, 254);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 9;
             pictureBox2.TabStop = false;
             // 
@@ -334,17 +340,36 @@
             label6.TabIndex = 0;
             label6.Text = "Nombre";
             // 
-            // Agregar
+            // textBox4
+            // 
+            textBox4.Location = new Point(50, 973);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(200, 39);
+            textBox4.TabIndex = 11;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(221, 969);
+            button1.Name = "button1";
+            button1.Size = new Size(50, 46);
+            button1.TabIndex = 12;
+            button1.Text = "...";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // frmAgregar
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1174, 1129);
+            Controls.Add(button1);
+            Controls.Add(textBox4);
             Controls.Add(grbHostil);
             Controls.Add(grbPasivo);
             Controls.Add(grbTipo);
             Controls.Add(btnAgregar);
             Controls.Add(lblTitulo);
-            Name = "Agregar";
+            Name = "frmAgregar";
             Text = "Agregar";
             grbTipo.ResumeLayout(false);
             grbTipo.PerformLayout();
@@ -391,5 +416,7 @@
         private Label lblDrop;
         private Label lblVida;
         private Label lblNombre;
+        private TextBox textBox4;
+        private Button button1;
     }
 }
